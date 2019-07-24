@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.cboCustomers = new System.Windows.Forms.ComboBox();
+            this.cboBooks = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cboCustomers
@@ -39,11 +40,20 @@
             this.cboCustomers.Size = new System.Drawing.Size(202, 21);
             this.cboCustomers.TabIndex = 1;
             // 
+            // cboBooks
+            // 
+            this.cboBooks.FormattingEnabled = true;
+            this.cboBooks.Location = new System.Drawing.Point(60, 93);
+            this.cboBooks.Name = "cboBooks";
+            this.cboBooks.Size = new System.Drawing.Size(202, 21);
+            this.cboBooks.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 450);
+            this.Controls.Add(this.cboBooks);
             this.Controls.Add(this.cboCustomers);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -55,6 +65,7 @@
         #endregion
 
         private System.Windows.Forms.ComboBox cboCustomers;
+        private System.Windows.Forms.ComboBox cboBooks;
     }
 }
 
