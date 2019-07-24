@@ -30,6 +30,7 @@
         {
             this.cboCustomers = new System.Windows.Forms.ComboBox();
             this.cboBooks = new System.Windows.Forms.ComboBox();
+            this.btnCustomer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cboCustomers
@@ -48,11 +49,22 @@
             this.cboBooks.Size = new System.Drawing.Size(202, 21);
             this.cboBooks.TabIndex = 2;
             // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Location = new System.Drawing.Point(60, 151);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(202, 60);
+            this.btnCustomer.TabIndex = 3;
+            this.btnCustomer.Text = "Add Customer";
+            this.btnCustomer.UseVisualStyleBackColor = true;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 450);
+            this.Controls.Add(this.btnCustomer);
             this.Controls.Add(this.cboBooks);
             this.Controls.Add(this.cboCustomers);
             this.Name = "Form1";
@@ -66,6 +78,7 @@
 
         private System.Windows.Forms.ComboBox cboCustomers;
         private System.Windows.Forms.ComboBox cboBooks;
+        private System.Windows.Forms.Button btnCustomer;
     }
 }
 
